@@ -48,6 +48,7 @@
     padding:12px 24px;
     border-radius: 100px;
     width: 100%;
+    cursor: pointer;
 
 }
 
@@ -63,4 +64,15 @@
     color: white;
     width: 100%;
 
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 984px;
+    width: 100%;
+    padding: 0px 16px;
+    margin: 32px auto;
 }

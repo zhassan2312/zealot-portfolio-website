@@ -155,3 +155,17 @@
 }
 
 
+@media (max-width:768px) {
+    .companiesLogoGrid
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:1024px) {
+    .testimonials
+    {
+        max-width: 484px;
+    }
+}
+

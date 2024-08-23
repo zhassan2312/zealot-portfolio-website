@@ -10,6 +10,7 @@
     font-size: 16px;
     gap:8px;
     border:none;
+    cursor: pointer;
 }
 
 .buttonIcon
@@ -29,6 +30,7 @@
     background-color: #fff;
     color: #F5450E;
     font-size: 16px;
+    cursor: pointer;
     gap:8px;
     border: none;
     box-shadow: 0px 4px 8px rgba(192, 192, 192, 0.1);

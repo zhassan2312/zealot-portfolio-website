@@ -1,7 +1,8 @@
 let portfolioProjects = [
     {
         image: 'Assets/Images/portfolio1.png',
-        name: 'Codexcue Landing Page'
+        name: 'Codexcue Landing Page',
+        link: ''
     },
     {
         image: 'Assets/Images/portfolio2.png',

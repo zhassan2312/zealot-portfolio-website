@@ -29,6 +29,7 @@
 .portfolioNavigationLink.active
 {
     background-color: #F5450E;
+    width: 100%;
     color: white;
 }
 

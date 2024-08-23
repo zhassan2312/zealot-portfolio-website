@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zealot</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +29,8 @@
         <script src="Scripts/skills-loading-bar.js"></script>
         <script src="Scripts/carousel.js"></script>
         <script src="Scripts/faq.js"></script>
+        <script src="Scripts/event-listeners.js"></script>
+        <script src="Scripts/form-submission.js"></script>
     </head>
 
     <body>
@@ -36,20 +40,18 @@
             
             <!--Header Container Starts here-->
 
-            <div class="headerContainer">
-                <div class="navigationLinks">
-                    <a href="#" class="navigationLink active" >Home</a>
-                    <a href="#" class="navigationLink">Services</a>
-                    <a href="#" class="navigationLink">Portfolio</a>
-                </div>
+            <div class="header">
+                
                 <div class="logoContainer">
                     <img src="Assets/Logo/logo.svg" alt="Zealot Logo" class="logoImage">
                 </div>
                 <div class="navigationLinks">
                     <a href="#" class="navigationLink">Resume</a>
-                    <a href="#" class="navigationLink">About</a>
-                    <a href="#" class="navigationLink">Contract</a>
+                    <a href="#" class="navigationLink js-portfolio-navigation">Portfolio</a>
                 </div>
+                <button class="primaryButton js-contact-navigation">
+                    Contact Me <img src="Assets/Icons/chat.svg" alt="Arrow Right" class="buttonIcon">
+                </button>
             </div>
 
             <!--Header Container ends here-->
@@ -69,10 +71,10 @@
                             I specialize in crafting visually appealing interfaces for websites, mobile apps, and product designs.
                         </p>
                         <div class="buttonContainer">
-                            <button class="secondaryButton">
+                            <button class="secondaryButton js-schedule-button">
                                 Schedule Now <img src="Assets/Icons/schedule.svg" alt="Arrow Right" class="buttonIcon">
                             </button>
-                            <button class="primaryButton">
+                            <button class="primaryButton js-contact-navigation">
                                 Let's have a chat! <img src="Assets/Icons/chat.svg" alt="Arrow Right" class="buttonIcon">
                             </button>
                         </div>
@@ -187,8 +189,8 @@
                             <button class="secondaryButton">
                                 Download Resume <img src="Assets/Icons/download.svg" alt="Arrow Right" class="buttonIcon">
                             </button>
-                            <button class="primaryButton">
-                                Contact Me <img src="Assets/Icons/chat.svg" alt="Arrow Right" class="buttonIcon">
+                            <button class="primaryButton js-contact-navigation">
+                                Contact Me <img src="Assets/Icons/chat.svg" alt="Arrow Right" class="buttonIcon ">
                             </button>
                         </div>
                     </div>
@@ -200,7 +202,7 @@
 
             <!--Portfolio Section Starts Here-->
 
-            <div class="sectionContainer">
+            <div class="sectionContainer" id="portfolioSection">
 
                 <div class="sectionHeader">
                     <h1>My <span>Portfolio</span></h1>
@@ -245,7 +247,7 @@
                 </div>
 
                 <div class="buttonContainer">
-                    <button class="primaryButton">
+                    <button class="primaryButton js-upwork-button">
                         Available on Upwork <img src="Assets/Icons/upwork.svg" alt="Arrow Right" class="buttonIcon">
                     </button>
                 </div>
@@ -354,7 +356,7 @@
 
             <!--Contact Section Starts Here-->
 
-            <div class="sectionContainer">
+            <div class="sectionContainer" id="contactSection">
                 <div class="sectionHeader">
                     <h1>Let's <span>Work Together</span></h1>
                     <p>Feel free to get in touch with me for any inquiries, collaborations, or project opportunities.</p>
@@ -363,12 +365,15 @@
                 <div class="horizontalSectionContainer">
                     <img src="Assets/Images/contactSection.png" alt="Contact Section Image" class="contactSectionImage2">
                     <div class="contactSection">
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-                        <select class="js-form-services">
+                        <form class="contactForm">
+                            <input type="text" placeholder="Your Name">
+                            <input type="email" placeholder="Your Email">
+                            <select class="js-form-services">
 
-                        </select>
-                        <textarea placeholder="Your Message"></textarea>
+                            </select>
+                            <textarea placeholder="Your Message"></textarea>
+                        </form>
+                        
                         <button class="primaryButton">
                             Submit Now <img src="Assets/Icons/submit.svg" alt="Arrow Right" class="buttonIcon">
                         </button>
@@ -415,7 +420,7 @@
                         <a href="#" class="footerNavigationLink">Portfolio</a>
                         <a href="#" class="footerNavigationLink">Resume</a>
                         <a href="#" class="footerNavigationLink">About</a>
-                        <a href="#" class="footerNavigationLink">Contract</a>
+                        <a href="#" class="footerNavigationLink">Contact</a>
                     </div>
                     <div class="footerContactDetails">
                         <div class="detail">
@@ -426,20 +431,26 @@
                             <img src="Assets/Icons/phone.svg" alt="Location" class="detailIcon">
                             <p>+92 311 6699726</p>
                         </div>
-                        <div class="detail">
+                        <div class="detail js-email-button">
                             <img src="Assets/Icons/email.svg" alt="Location" class="detailIcon">
                             <p>zhassan2312@gmail.com</p>
                         </div>
                         
                         <div class="footerSocialLinks">
-                            <a href="#" class="footerSocialLink">
+                            <a href="https://www.behance.net/zhassan2312" class="footerSocialLink js-behance-button" target="_blank">
                                 <img src="Assets/Icons/behance.svg" alt="behance" class="socialIcon">
                             </a>
-                            <a href="#" class="footerSocialLink">
+                            <a href="https://dribbble.com/zhassan2312" class="footerSocialLink js-dribbble-button" target="_blank">
                                 <img src="Assets/Icons/dribbble.svg" alt="dribbble" class="socialIcon">
                             </a>
-                            <a href="#" class="footerSocialLink">
+                            <a href="https://www.linkedin.com/in/zhassan2312/" class="footerSocialLink js-linkedIn-button" target="_blank">
                                 <img src="Assets/Icons/Linkedin.svg" alt="Linkedin" class="socialIcon">
+                            </a>
+                            <a href="https://www.upwork.com/freelancers/~01ed8e41a9e6f5d90e" class="footerSocialLink js-upwork-button" target="_blank">
+                                <img src="Assets/Icons/upworkLogo.png" alt="upwork" class="socialIcon">
+                            </a>
+                            <a href="https://github.com/zhassan2312" class="footerSocialLink js-github-button" target="_blank">
+                                <img src="Assets/Icons/githubLog.png" alt="github" class="socialIcon">
                             </a>
                         </div>
                     </div>

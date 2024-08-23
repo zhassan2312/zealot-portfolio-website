@@ -8,7 +8,6 @@
     column-gap: 32px;
     padding:32px 64px;
     border-radius: 100px;
-    box-sizing: border-box;
     background-color: #FAFAFA;
     width: 100%;
 }
@@ -34,4 +33,15 @@
     width: 64px;
     height: 64px;
     object-fit: contain;
+}
+
+
+@media (max-width: 768px)
+{
+    .tools
+    {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 32px;
+    }
+    
 }

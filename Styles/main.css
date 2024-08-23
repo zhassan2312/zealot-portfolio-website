@@ -52,20 +52,6 @@ body
 }
 
 
-.sunImage {
-    animation: rotateSun 10s linear infinite;
-}
-
-@keyframes rotateSun {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-
 .sectionContainer
 {
     display: flex;
@@ -73,8 +59,9 @@ body
     justify-content: center;
     align-items: center;
     gap:32px;
-    max-width: 1184px;
+    max-width: 1248px;
     width: 100%;
+    padding:0 32px;
 }
 
 .coloredSectionContainer
@@ -85,9 +72,20 @@ body
 }
 
 .horizontalSectionContainer
-{display: flex;
+{
+    display: flex;
     justify-content: center;
     gap:64px;
     align-items: center;
     width: 100%;
+}
+
+
+@media (max-width: 1024px)
+{
+
+    .horizontalSectionContainer
+    {
+        flex-direction: column;
+    }
 }
