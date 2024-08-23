@@ -1,0 +1,49 @@
+.primaryButton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 100px;
+    background-color: #F5450E;
+    color: #fff;
+    font-size: 16px;
+    gap:8px;
+    border:none;
+}
+
+.buttonIcon
+{
+    width:28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.secondaryButton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #F5450E;
+    font-size: 16px;
+    gap:8px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(192, 192, 192, 0.1);
+}
+
+.primaryButton:hover
+{
+    background-color: #f1693f;
+    gap:32px;
+    transition: 0.3s;
+}
+
+.secondaryButton:hover
+{
+    box-shadow: 0px 4px 8px rgba(76, 76, 76, 0.2);
+    gap:32px;
+    transition: 0.3s;
+}

@@ -1,0 +1,96 @@
+.footer
+{
+    color:#D1D3D7;
+    gap:32px;
+    border-bottom: 1px solid #b0b0b4 ;
+}
+
+.footerLogo
+{
+    height: 64px;
+    width: auto;
+}
+
+.footerLogoContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 360px;
+    gap: 32px;
+}
+
+.footerContent
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1184px;
+    width: 100%;
+    padding:32px 0px;
+    margin: 0 auto;
+}
+
+.footerNavigationLinks
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footerNavigationLink
+{
+    color: #4A5460;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footerContactDetails
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+.detail{
+    display: flex;
+    gap: 8px;
+}
+
+.detail p
+{
+    color: #4A5460;
+}
+
+.detail img
+{
+    height: 24px;
+    width: 24px;
+}
+
+.footerSocialLinks
+{
+    display: flex;
+    gap: 16px;
+}
+
+.socialIcon
+{
+    height: 64px;
+    width: 64px;
+}
+
+.footerBottom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.footerBottom p
+{
+    color: #4A5460;
+    font-size: 12px;
+    font-weight: bold;
+}

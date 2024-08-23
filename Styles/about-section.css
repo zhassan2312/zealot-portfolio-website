@@ -1,0 +1,67 @@
+
+
+.aboutSectionContent
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 820px;
+    gap: 32px;
+}
+
+.aboutSectionHeading h1
+{
+    color:#1D2939;
+}
+
+.aboutSectionHeading h1 span
+{
+    color:#F5450E;
+}
+
+.aboutSectionHeading p
+{
+    color:#4A5460;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.aboutSectionBodyText
+{
+    color:#777E88;
+    font-size: 15px;
+}
+
+.aboutMajorSection
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.aboutMajor
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutMajor h1
+{
+    font-size: 69px;
+    font-weight: 700;
+    color:#F5450E;
+}
+
+.aboutMajor p
+{
+    font-size: 18px;
+    color:#4A5460;
+}
+
+
+
