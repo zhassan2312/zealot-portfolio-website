@@ -1,93 +1,151 @@
+/* Hero Section Container */
 .heroSectionContainer {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: -96px;
-    padding:0 32px;
+    gap:32px;
+    padding: 0 32px;
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(180deg, #fff, rgba(245, 69, 14, 0.1), rgba(240, 14, 14, 0.1), rgba(245, 167, 14, 0.1));
+    background: var(--grad1);
+    z-index: 1;
 }
 
-
-.heroSection{
+/* Hero Section */
+.heroSection {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 32px;
     align-items: center;
-    max-width: 1184px;
-    width: 100%;
 }
 
-.heroSectionHeading h1
-{
-    color:#1D2939;
+/* Hero Section Heading */
+.heroSectionHeading h1 {
+    color: var(--black);
 }
 
-.heroSectionHeading h1 span
-{
-    color:#F5450E;
+.heroSectionHeading h1 span {
+    color: #F5450E;
 }
 
-.heroSectionHeading h3
-{
-    color:#F5450E;
+.heroSectionHeading h3 {
+    color: #F5450E;
     font-weight: normal;
 }
 
-.heroSectionHeading p
-{
-    color:#1D2939;
+.heroSectionHeading p {
+    color: var(--black);
     font-weight: 500;
 }
 
-.heroSectionHeading p span
-{
-    color:#F5450E;
-    font-size: 18px;
+/* Text Animation */
+.textAnimation {
+    color: var(--black);
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.heroSectionBodyText
-{
-    color:#777E88;
+.textAnimation span {
+    position: relative;
 }
 
+.textAnimation span::before {
+    content: attr(data-text);
+    color: #F5450E;
+    animation: words 20s infinite;
+}
 
+.textAnimation span::after {
+    content: "";
+    position: absolute;
+    color: #F5450E;
+    width: calc(100% + 8px);
+    animation: words 20s infinite;
+    height: 100%;
+    border-left: 3px solid var(--background);
+    background-color: var(--anim);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
 
-.heroSectionContent
-{
+/* Keyframes for Text Animation */
+@keyframes cursor {
+    to {
+        border-left: 2px solid #F5450E;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "UI/UX Designer";
+    }
+    21%, 40% {
+        content: "Web Developer";
+    }
+    41%, 60% {
+        content: "App Developer";
+    }
+    61%, 80% {
+        content: "Researcher";
+    }
+    81%, 100% {
+        content: "Full Stack Designer & Developer";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%, 100% {
+        width: calc(100% + 8px);
+    }
+}
+
+/* Hero Section Body Text */
+.heroSectionBodyText {
+    color: var(--black60);
+}
+
+/* Hero Section Content */
+.heroSectionContent {
     display: flex;
     flex-direction: column;
     gap: 32px;
     max-width: 528px;
     width: 100%;
-
 }
 
-
+/* Hero Section Image Container */
 .heroSectionImageContainer {
     width: 528px;
     height: 430px;
     position: relative;
+    overflow: hidden;
+}
+
+.heroSectionImage1, .heroSectionImage2 {
+    position: absolute;
+    bottom: 0;
+    will-change: transform;
 }
 
 .heroSectionImage1 {
     width: 528px;
     height: 268px;
-    position: absolute;
     z-index: 1; /* Lower z-index to be at the back */
-    bottom: 0%;
 }
 
 .heroSectionImage2 {
-    bottom:0%;
-    right: 16%;
     width: 321px;
     height: 430px;
-    position: absolute;
+    right: 16%;
     z-index: 2; /* Higher z-index to be at the front */
 }
 
+/* Hero Section Shadow Container */
 .heroSectionShadowContainer {
     display: flex;
     bottom: 0;
@@ -95,20 +153,71 @@
     height: 75px;
     position: absolute;
     z-index: 3; /* Highest z-index to be at the front */
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    background: var(--shadowgrad);
 }
 
+/* Hover Effect for Image 1 */
 .heroSectionImageContainer:hover .heroSectionImage1 {
     transform: scale(1.2);
     transition: transform 0.5s;
 }
 
-
-@media (max-width:1100px) 
-{
-    .heroSection
-    {
+/* Media Queries */
+@media (max-width: 1100px) {
+    .heroSection {
         flex-direction: column;
         gap: 32px;
     }
+}
+
+/* Keyframes for Animations */
+@keyframes popUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popOut {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Initial States */
+.heroSectionHeading, .heroSectionBodyText, .buttonContainer, .heroSectionImage2, .heroSectionImage1 {
+    opacity: 0;
+}
+
+/* Animation Classes */
+.heroSectionHeading.animate, .heroSectionBodyText.animate, .buttonContainer.animate {
+    animation: slideInLeft 1s forwards;
+}
+
+.heroSectionImage2.animate {
+    animation: popUp 1s forwards;
+}
+
+.heroSectionImage1.animate {
+    animation: popUp 1s forwards;
 }

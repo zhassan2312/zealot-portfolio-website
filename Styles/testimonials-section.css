@@ -68,7 +68,7 @@
     gap: 16px;
     padding:32px 64px;
     border-radius: 100px;
-    background-color:#E7E9EA;
+    background-color:var(--black10);
     transition: transform 0.5s ease-in-out;
 
 }
@@ -98,18 +98,18 @@
 
 .testimonialDetails h3
 {
-    color: #1D2939;
+    color: var(--black);
 }
 
 
 .testimonial p
 {
-    color: #777E88;
+    color: var(--black60);
 }
 
 .testimonialDetails p
 {
-    color: #4A5460;
+    color: var(--black80);
     font-weight: 500;
 }
 
@@ -139,7 +139,7 @@
 .dot {
     height: 16px;
     width: 16px;
-    background-color: #bbb;
+    background-color: var(--black40);
     border-radius: 8px;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -151,7 +151,7 @@
 }
 
 .dot:hover {
-    background-color: #717171;
+    background-color: var(--black60);
 }
 
 
@@ -168,4 +168,5 @@
         max-width: 484px;
     }
 }
+
 

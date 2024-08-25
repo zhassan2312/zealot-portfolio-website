@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     padding: 8px;
-    background-color: #E7E9EA;
+    background-color: var(--black10);
     border-radius: 100px;
     box-sizing: border-box;
     max-width: 984px;
@@ -13,7 +13,7 @@
 
 .portfolioNavigationLink
 {
-    color: #777E88;
+    color: var(--black60);
     text-decoration: none;
     font-size: 15px;
     padding:12px 24px;
@@ -22,7 +22,7 @@
 
 .portfolioNavigationLink:hover
 {
-    background-color: #D1D3D7;
+    background-color: var(--black20);
     transition: 0.5s;
 }
 
@@ -30,7 +30,7 @@
 {
     background-color: #F5450E;
     width: 100%;
-    color: white;
+    color: var(--background);
 }
 
 .portfolioContainer{
@@ -63,7 +63,7 @@
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
+    color: var(--background);
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
@@ -73,3 +73,6 @@
 .portfolioImageWrapper:hover .portfolioImageOverlay {
     bottom: 0; /* Move into view */
 }
+
+
+

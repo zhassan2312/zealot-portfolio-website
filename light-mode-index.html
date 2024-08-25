@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Light Mode</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="Styles/header.css">
+        <link rel="stylesheet" type="text/css" href="Styles/main.css">
+
+        <link rel="stylesheet" type="text/css" href="Styles/hero-section.css">
+        <link rel="stylesheet" type="text/css" href="Styles/buttons.css">
+        <link rel="stylesheet" type="text/css" href="Styles/text-styles.css">
+        <link rel="stylesheet" type="text/css" href="Styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="Styles/tools-section.css">
+        <link rel="stylesheet" type="text/css" href="Styles/portfolio-section.css">
+        <link rel="stylesheet" type="text/css" href="Styles/about-section.css">
+        <link rel="stylesheet" type="text/css" href="Styles/skills-section.css">
+        <link rel="stylesheet" type="text/css" href="Styles/contact-section.css">
+        <link rel="stylesheet" type="text/css" href="Styles/testimonials-section.css">
+        <link rel="stylesheet" type="text/css" href="Styles/faq-section.css">
+        <link rel="stylesheet" type="text/css" href="Styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="Styles/dark-mode.css">
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="Scripts/portfolio-projects.js"></script>
+        <script src="Scripts/skills-loading-bar.js"></script>
+        <script src="Scripts/carousel.js"></script>
+        <script src="Scripts/faq.js"></script>
+        <script src="Scripts/event-listeners.js"></script>
+        <script src="Scripts/form-submission.js"></script>
+        <script src="Scripts/parallax/hero-section-parallax.js"></script>
+        <script src="Scripts/dark-mode-switching.js"></script>
+        <script src="Scripts/contact-animation.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div id="id">
+
+            <div class="page1">
+            <!--Hero Section Starts here-->
+            <div class="heroSectionContainer">
+                <div class="header">
+                
+                    <div class="logoContainer" id="logo-container" onclick="
+                        document.body.classList.toggle('dark-mode');
+                        document.querySelector('.logoImage').src = document.body.classList.contains('dark-mode') ? 'Assets/Logo/logo 1.svg' : 'Assets/Logo/logo.svg';
+                        document.querySelector('.heroSectionImage1').src = document.body.classList.contains('dark-mode') ? 'Assets/Graphics/dark.png' : 'Assets/Graphics/heroSectionImageBackground.svg';
+                        ">
+                        <img src="Assets/Logo/logo.svg" alt="Zealot Logo" class="logoImage">
+                    </div>
+                    <div class="navigationLinks">
+                        <a href="#" class="navigationLink">Resume</a>
+                        <a href="#" class="navigationLink js-portfolio-navigation">Portfolio</a>
+                    </div>
+                    <button class="primaryButton js-contact-navigation">
+                        Contact Me <img src="Assets/Icons/chat.svg" alt="Arrow Right" class="buttonIcon">
+                    </button>
+                </div>
+                <div class="heroSection">
+                    <div class="heroSectionContent">
+                        <div class="heroSectionHeading">
+                            <h3 id="hero-section-text1">Hey, there!</h3>
+                            <h1 id="hero-section-text2">It's <span>Zohaib Hassan</span></h1>
+                            <p id="hero-section-text3" class="textAnimation">I'm a <span></span></p>
+                        </div>
+                        <p class="heroSectionBodyText" id="hero-section-text4">
+                            I specialize in crafting visually appealing interfaces for websites, mobile apps, and product designs.
+                        </p>
+                        <div class="buttonContainer" id="hero-section-buttons">
+                            <button class="secondaryButton js-schedule-button">
+                                Schedule Now <img src="Assets/Icons/schedule.svg" alt="Arrow Right" class="buttonIcon">
+                            </button>
+                            <button class="primaryButton js-contact-navigation">
+                                Let's have a chat! <img src="Assets/Icons/chat.svg" alt="Arrow Right" class="buttonIcon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="heroSectionImageContainer">
+                        <img src="Assets/Graphics/heroSectionImageBackground.svg" alt="Hero Section Image" class="heroSectionImage1" id="hero-section-image1">
+                        <img src="Assets/Images/myImage.png" alt="Hero Section Image" class="heroSectionImage2" id="hero-section-image2">
+                    </div>
+                </div>
+                <div class="heroSectionShadowContainer"></div>
+            </div>
+            <!--Hero Section ends here-->
+        </div>
+            
+            <div class="page2">
+                <!--Tools Section Starts here-->
+
+                <div class="sectionContainer" id="toolsSection">
+                    <div class="sectionHeader">
+                        <h1>Tools <span>I Use</span></h1>
+                        <p>Essential Gear for getting Things Done</p>
+                    </div>
+                    <div class="tools">
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/figma.png" alt="figma">
+                            <p>Figma</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/react.png" alt="react">
+                            <p>React JS</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/html.png" alt="html">
+                            <p>HTML</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/css.png" alt="css">
+                            <p>CSS</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/javascript.png" alt="js">
+                            <p>JS</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/sketch.png" alt="sketch">
+                            <p>Sketch</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/slack.png" alt="slack">
+                            <p>Slack</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/balasmiq.png" alt="balasmiq">
+                            <p>Balasmiq</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/notion.png" alt="notion">
+                            <p>Notion</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/wordpress.png" alt="wordpress">
+                            <p>Wordpress</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/webflow.png" alt="webflow">
+                            <p>Webflow</p>
+                        </div>
+                        <div class="toolSection"> 
+                            <img src="Assets/Images/framer.png" alt="framer">
+                            <p>Framer</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!--Tools Section ends here-->
+            </div>
+                
+                
+            <div class="page3">
+                    <!--About Section Starts here-->
+
+                    <div class="coloredSectionContainer">
+                        
+                        <div class="horizontalSectionContainer">
+                            <div class="aboutSectionImageContainer">
+                                <img src="Assets/Images/myImage2.png" alt="About Section Image" class="aboutSectionImage2">
+                            </div>
+                            <div class="aboutSectionContent">
+                                <div class="aboutSectionHeading">
+                                    <h1>About <span>Me</span></h1>
+                                    <p>Double Your Impact with 2x Conversion Rate.</p>
+                                </div>
+                                <p class="aboutSectionBodyText">
+                                    Unlock the power of doubling your impact with our revolutionary approach, 
+                                    proven to boost conversion rates by an impressive 2x! Experience unparalleled 
+                                    results as you engage your audience and drive action like never before. Don't 
+                                    settle for mediocre outcomes when you can amplify your success with our cutting-edge strategies. 
+                                    Join the ranks of thriving businesses and maximize your potential today!
+                                </p>
+                                <div class="aboutMajorSection">
+                                    <div class="aboutMajor">
+                                        <h1>3 +</h1>
+                                        <p>Years of Experience</p>
+                                    </div>
+                                    <div class="aboutMajor">
+                                        <h1>40 +</h1>
+                                        <p>Projects Completed</p>
+                                    </div>
+                                    <div class="aboutMajor">
+                                        <h1>10 +</h1>
+                                        <p>Satisfied Clients</p>
+                                    </div>
+                                </div>
+                                <div class="buttonContainer">
+                                    <button class="secondaryButton">
+                                        Download Resume <img src="Assets/Icons/download.svg" alt="Arrow Right" class="buttonIcon">
+                                    </button>
+                                    <button class="primaryButton js-contact-navigation">
+                                        Contact Me <img src="Assets/Icons/chat.svg" alt="Arrow Right" class="buttonIcon ">
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!--About Section ends here-->
+                </div>
+
+                <div class="page4">
+
+                    <!--Portfolio Section Starts Here-->
+
+                        <div class="sectionContainer" id="portfolioSection">
+
+                            <div class="sectionHeader">
+                                <h1>My <span>Portfolio</span></h1>
+                                <p>Examples of my work and learn more about my skills, experience, and design approach.</p>
+                            </div>
+
+                            <div class="portfolioNavigationLinks">
+                                <a href="#" class="portfolioNavigationLink active" >Home</a>
+                                <a href="#" class="portfolioNavigationLink">Services</a>
+                                <a href="#" class="portfolioNavigationLink">Portfolio</a>
+                                <a href="#" class="portfolioNavigationLink">Resume</a>
+                                <a href="#" class="portfolioNavigationLink">About</a>
+                                <a href="#" class="portfolioNavigationLink">Contract</a>
+                            </div>
+
+                            <div class="portfolioContainer js-portfolio-container">
+                                
+                                
+                            </div>
+
+
+                        </div>
+
+                        <!--Portfolio Section ends here-->
+
+                    </div>
+
+
+                    <div class="page5">
+                        <!--Skills section starts here-->
+
+                            <div class="sectionContainer">
+                                <div class="sectionHeader">
+                                    <h1>My <span>Skills</span></h1>
+                                    <p>I ensure a clear grasp of your project goals and requirements, aligning our design efforts with your expectations and objectives.</p>
+                                </div>
+                                <div class="horizontalSectionContainer">
+                                    
+                                        <div id="skillsAnimation"></div>
+                                    
+                                    <div class="skillsSection js-skills-section">
+                                        
+                                    </div>
+                                        
+                                    
+                                </div>
+
+                                <div class="buttonContainer">
+                                    <button class="primaryButton js-upwork-button">
+                                        Available on Upwork <img src="Assets/Icons/upwork.svg" alt="Arrow Right" class="buttonIcon">
+                                    </button>
+                                </div>
+                            </div>
+                            <!--Skills section ends here-->
+
+                    </div>
+
+                    <div class="page6">
+                            <!--Testimonials Section Starts Here-->
+
+                                <div class="coloredSectionContainer">
+                                    <div class="testimonialsContainer">
+                                        <div class="companiesTestimonialsContainer">
+                                            <div class="sectionHeader">
+                                                <h1>My <span>Clients</span></h1>
+                                                <p>Partners in Progress & Roster of Collaborators</p>
+                                            </div>
+                                            <div class="companiesLogoGrid">
+                                                <img src="Assets/Images/companies.png" alt="Airbnb" class="companyLogo">
+                                                <img src="Assets/Images/companies1.png" alt="Airbnb" class="companyLogo">
+                                                <img src="Assets/Images/companies3.png" alt="Airbnb" class="companyLogo">
+                                                <img src="Assets/Images/companies4.png" alt="Airbnb" class="companyLogo">
+                                                <img src="Assets/Images/companies5.png" alt="Airbnb" class="companyLogo">
+                                                <img src="Assets/Images/companies6.png" alt="Airbnb" class="companyLogo">
+                                                <img src="Assets/Images/companies7.png" alt="Airbnb" class="companyLogo">
+                                                <img src="Assets/Images/companies8.png" alt="Airbnb" class="companyLogo">
+                                            </div>
+                                        </div>
+
+                                        <div class="testimonialsSection">
+                                            <div class="sectionHeader">
+                                                <h1>What People <span>Think About me</span>?</h1>
+                                                <p>Testimonials That Speak To My Result</p>
+                                            </div>
+                                            <div class="testimonialsSubSection">
+                                                <div class="testimonials">
+                                                    <div class="testimonial">
+                                                        <div class="testimonialHeader">
+                                                            <div class="testimonialSubHeader">
+                                                                <img src="Assets/Images/testimonial1.png" alt="Testimonial Image" class="testimonialImage">
+                                                                <div class="testimonialDetails">
+                                                                    <h3>Jesse Yao</h3>
+                                                                    <p>CEO, Redesign</p>
+                                                                </div>
+                                                            </div>
+                                                            <img src="Assets/Icons/commas.svg" alt="Quote" class="quoteIcon">
+                                                        </div>
+                                                        <p>"The app design team exceeded my expectations with their innovative approach and attention to detail. Their seamless user interface truly elevated the overall user experience."</p>
+                                                    </div>
+                                                
+                                                    <div class="testimonial">
+                                                        <div class="testimonialHeader">
+                                                            <div class="testimonialSubHeader">
+                                                                <img src="Assets/Images/testimonial1.png" alt="Testimonial Image" class="testimonialImage">
+                                                                <div class="testimonialDetails">
+                                                                    <h3>Maxime</h3>
+                                                                    <p>CEO, Turismo</p>
+                                                                </div>
+                                                            </div>
+                                                            <img src="Assets/Icons/commas.svg" alt="Quote" class="quoteIcon">
+                                                        </div>
+                                                        <p>"The app design team exceeded my expectations with their innovative approach and attention to detail. Their seamless user interface truly elevated the overall user experience."</p>
+                                                    </div>
+                                                
+                                                    <div class="testimonial">
+                                                        <div class="testimonialHeader">
+                                                            <div class="testimonialSubHeader">
+                                                                <img src="Assets/Images/testimonial1.png" alt="Testimonial Image" class="testimonialImage">
+                                                                <div class="testimonialDetails">
+                                                                    <h3>Anees</h3>
+                                                                    <p>CEO, Kneems</p>
+                                                                </div>
+                                                            </div>
+                                                            <img src="Assets/Icons/commas.svg" alt="Quote" class="quoteIcon">
+                                                        </div>
+                                                        <p>"The app design team exceeded my expectations with their innovative approach and attention to detail. Their seamless user interface truly elevated the overall user experience."</p>
+                                                    </div>
+                                                
+                                                    <div class="testimonial">
+                                                        <div class="testimonialHeader">
+                                                            <div class="testimonialSubHeader">
+                                                                <img src="Assets/Images/testimonial1.png" alt="Testimonial Image" class="testimonialImage">
+                                                                <div class="testimonialDetails">
+                                                                    <h3>Umer</h3>
+                                                                    <p>CEO, Copy</p>
+                                                                </div>
+                                                            </div>
+                                                            <img src="Assets/Icons/commas.svg" alt="Quote" class="quoteIcon">
+                                                        </div>
+                                                        <p>"The app design team exceeded my expectations with their innovative approach and attention to detail. Their seamless user interface truly elevated the overall user experience."</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="carousel-dots">
+                                                    <span class="dot" onclick="currentSlide(1)"></span>
+                                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                                </div>
+                                            </div>
+                                            
+                                            
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Testimonials Section ends Here-->
+                    </div>
+
+                    <div class="page7">
+                                
+                                <!--Contact Section Starts Here-->
+
+                                    <div class="sectionContainer" id="contactSection">
+                                        <div class="sectionHeader">
+                                            <h1>Let's <span>Work Together</span></h1>
+                                            <p>Feel free to get in touch with me for any inquiries, collaborations, or project opportunities.</p>
+                                        </div>
+
+                                        <div class="horizontalSectionContainer">
+                                            <div id="lottie-container" class="contactSectionImage2"></div>
+                                            <div class="contactSection">
+                                                <form class="contactForm">
+                                                    <input type="text" placeholder="Your Name">
+                                                    <input type="email" placeholder="Your Email">
+                                                    <select class="js-form-services">
+
+                                                    </select>
+                                                    <textarea placeholder="Your Message"></textarea>
+                                                </form>
+                                                
+                                                <button class="primaryButton">
+                                                    Submit Now <img src="Assets/Icons/submit.svg" alt="Arrow Right" class="buttonIcon">
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!--Contact Section ends here-->
+
+                                </div>
+
+
+                                <div class="page8">
+
+                                        <!--FAQ Section Starts Here-->
+                                        <div class="sectionContainer">
+                                            <div class="sectionHeader">
+                                                <h1>Frequently <span>Asked Questions</span></h1>
+                                                <p>Find answers to common questions about our services, process, and more. Learn how we can help elevate your digital presence and address your unique needs.</p>
+                                            </div>
+
+                                            <div class="faqSection">
+                                                <div class="faqs js-faqs">
+                                                    <!-- FAQ items will be injected here by JavaScript -->
+                                                </div>
+
+                                                <div class="answerSection">
+                                                    <h4></h4>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--FAQ Section ends here-->
+
+                                        
+
+                                </div>
+
+                                <!--Footer Section Starts Here-->
+
+                                <div class="coloredSectionContainer">
+                                    <div class="footerContent">
+                                        <div class="footerLogoContainer">
+                                            <img src="Assets/Logo/logo.svg" alt="Zealot Logo" class="footerLogo">
+                                            <p>I’m passionate about bringing your ideas to life in ways that not only look amazing but also resonate with your users.</p>
+                                        </div>
+                                        <div class="footerNavigationLinks">
+                                            <a href="#" class="footerNavigationLink">Home</a>
+                                            <a href="#" class="footerNavigationLink">Services</a>
+                                            <a href="#" class="footerNavigationLink">Portfolio</a>
+                                            <a href="#" class="footerNavigationLink">Resume</a>
+                                            <a href="#" class="footerNavigationLink">About</a>
+                                            <a href="#" class="footerNavigationLink">Contact</a>
+                                        </div>
+                                        <div class="footerContactDetails">
+                                            <div class="detail">
+                                                <img src="Assets/Icons/location.svg" alt="Location" class="detailIcon">
+                                                <p>NUST CEME, Rawalpindi</p>
+                                            </div>
+                                            <div class="detail">
+                                                <img src="Assets/Icons/phone.svg" alt="Location" class="detailIcon">
+                                                <p>+92 311 6699726</p>
+                                            </div>
+                                            <div class="detail js-email-button">
+                                                <img src="Assets/Icons/email.svg" alt="Location" class="detailIcon">
+                                                <p>zhassan2312@gmail.com</p>
+                                            </div>
+                                            
+                                            <div class="footerSocialLinks">
+                                                <a href="https://www.behance.net/zhassan2312" class="footerSocialLink js-behance-button" target="_blank">
+                                                    <img src="Assets/Icons/behance.svg" alt="behance" class="socialIcon">
+                                                </a>
+                                                <a href="https://dribbble.com/zhassan2312" class="footerSocialLink js-dribbble-button" target="_blank">
+                                                    <img src="Assets/Icons/dribbble.svg" alt="dribbble" class="socialIcon">
+                                                </a>
+                                                <a href="https://www.linkedin.com/in/zhassan2312/" class="footerSocialLink js-linkedIn-button" target="_blank">
+                                                    <img src="Assets/Icons/Linkedin.svg" alt="Linkedin" class="socialIcon">
+                                                </a>
+                                                <a href="https://www.upwork.com/freelancers/~01ed8e41a9e6f5d90e" class="footerSocialLink js-upwork-button" target="_blank">
+                                                    <img src="Assets/Icons/upworkLogo.png" alt="upwork" class="socialIcon">
+                                                </a>
+                                                <a href="https://github.com/zhassan2312" class="footerSocialLink js-github-button" target="_blank">
+                                                    <img src="Assets/Icons/githubLog.png" alt="github" class="socialIcon">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="footerBottom">
+                                        <p>© 2024 Zealot. All Rights Reserved.</p>
+                                    </div>
+                                </div>
+                                    </div>
+    </body>
+</html>

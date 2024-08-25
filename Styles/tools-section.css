@@ -8,24 +8,23 @@
     column-gap: 32px;
     padding:32px 64px;
     border-radius: 100px;
-    background-color: #FAFAFA;
+    background-color: var(--black2);
     width: 100%;
 }
-
 .toolSection
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
 }
 
 .toolSection p
 {
     font-size: 18px;
     font-weight: bold;
-    color: #1D2939;
+    color: var(--black);
 }
 
 .toolSection img
@@ -45,3 +44,4 @@
     }
     
 }
+
