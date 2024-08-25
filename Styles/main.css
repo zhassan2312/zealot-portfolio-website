@@ -134,7 +134,16 @@ html,body
     }
 }
 
-.page1, .page2, .page3, .page4, .page5, .page6,.page7,.page8
+.page1, .page2, .page3, .page5, .page7,.page8
+{
+    position: relative;
+    background-color: var(--background);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page4,.page6
 {
     position: relative;
     background-color: var(--background);

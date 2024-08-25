@@ -35,7 +35,7 @@ let skills = [
 
 function generateSkillHTML() {
     let skillHTML = ``;
-    let serviceHTML=`;`
+    let serviceHTML = ``;
     skills.forEach((skill) => {
         skillHTML += `
         <div class="skill">
@@ -44,20 +44,18 @@ function generateSkillHTML() {
                 <h3>${skill.percentage}%</h3>
             </div>
             <div class="skillBar">
-                <div class="skillBarFill" style="width: ${skill.percentage}%;"></div>
+                <div class="skillBarFill" data-percentage="${skill.percentage}" style="width: 0%;"></div>
             </div>
         </div>
         `;
     });
 
-    serviceHTML+=`<option value="default">--Select Service--</option>`
-    skills.forEach((service)=>
-        {
-            serviceHTML+=`
-                <option value="${service.name}">${service.name}</option>
-
-            `;
-        });
+    serviceHTML += `<option value="default">--Select Service--</option>`;
+    skills.forEach((service) => {
+        serviceHTML += `
+            <option value="${service.name}">${service.name}</option>
+        `;
+    });
 
     document.querySelector('.js-form-services').innerHTML = serviceHTML;
     document.querySelector('.js-skills-section').innerHTML = skillHTML;

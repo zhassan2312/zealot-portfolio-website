@@ -23,19 +23,15 @@
         <link rel="stylesheet" type="text/css" href="Styles/testimonials-section.css">
         <link rel="stylesheet" type="text/css" href="Styles/faq-section.css">
         <link rel="stylesheet" type="text/css" href="Styles/footer.css">
-        <link rel="stylesheet" type="text/css" href="Styles/dark-mode.css">
-        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="Scripts/portfolio-projects.js"></script>
         <script src="Scripts/skills-loading-bar.js"></script>
         <script src="Scripts/carousel.js"></script>
         <script src="Scripts/faq.js"></script>
         <script src="Scripts/event-listeners.js"></script>
-        <script src="Scripts/form-submission.js"></script>
-        <script src="Scripts/parallax/hero-section-parallax.js"></script>
+        <script src="Scripts/parallax/parallax-scrolling.js"></script>
         <script src="Scripts/dark-mode-switching.js"></script>
         <script src="Scripts/contact-animation.js"></script>
         
@@ -57,7 +53,7 @@
                         <a href="#" class="navigationLink">Resume</a>
                         <a href="#" class="navigationLink js-portfolio-navigation">Portfolio</a>
                     </div>
-                    <button class="primaryButton js-contact-navigation">
+                    <button class="primaryButton js-contact-navigation headerButton">
                         Contact Me <img src="Assets/Icons/chat.svg" alt="Arrow Right" class="buttonIcon">
                     </button>
                 </div>
@@ -93,8 +89,8 @@
             <div class="page2">
                 <!--Tools Section Starts here-->
 
-                <div class="sectionContainer" id="toolsSection">
-                    <div class="sectionHeader">
+                <div class="sectionContainer toolsSectionContainer" id="toolsSection">
+                    <div class="sectionHeader toolsSectionHeader">
                         <h1>Tools <span>I Use</span></h1>
                         <p>Essential Gear for getting Things Done</p>
                     </div>
@@ -158,9 +154,9 @@
             <div class="page3">
                     <!--About Section Starts here-->
 
-                    <div class="coloredSectionContainer">
+                    <div class="coloredSectionContainer aboutSectionContainer">
                         
-                        <div class="horizontalSectionContainer">
+                        <div class="horizontalSectionContainer aboutSectionSubContainer">
                             <div class="aboutSectionImageContainer">
                                 <img src="Assets/Images/myImage2.png" alt="About Section Image" class="aboutSectionImage2">
                             </div>
@@ -210,9 +206,9 @@
 
                     <!--Portfolio Section Starts Here-->
 
-                        <div class="sectionContainer" id="portfolioSection">
+                        <div class="sectionContainer portfolioSectionContainer" id="portfolioSection">
 
-                            <div class="sectionHeader">
+                            <div class="sectionHeader portfolioHeader">
                                 <h1>My <span>Portfolio</span></h1>
                                 <p>Examples of my work and learn more about my skills, experience, and design approach.</p>
                             </div>
@@ -242,8 +238,8 @@
                     <div class="page5">
                         <!--Skills section starts here-->
 
-                            <div class="sectionContainer">
-                                <div class="sectionHeader">
+                            <div class="sectionContainer skillsSectionContainer">
+                                <div class="sectionHeader skillsHeader">
                                     <h1>My <span>Skills</span></h1>
                                     <p>I ensure a clear grasp of your project goals and requirements, aligning our design efforts with your expectations and objectives.</p>
                                 </div>
@@ -271,10 +267,10 @@
                     <div class="page6">
                             <!--Testimonials Section Starts Here-->
 
-                                <div class="coloredSectionContainer">
+                                <div class="coloredSectionContainer testimonialsSectionContainer">
                                     <div class="testimonialsContainer">
                                         <div class="companiesTestimonialsContainer">
-                                            <div class="sectionHeader">
+                                            <div class="sectionHeader clientsHeader">
                                                 <h1>My <span>Clients</span></h1>
                                                 <p>Partners in Progress & Roster of Collaborators</p>
                                             </div>
@@ -374,8 +370,8 @@
                                 
                                 <!--Contact Section Starts Here-->
 
-                                    <div class="sectionContainer" id="contactSection">
-                                        <div class="sectionHeader">
+                                    <div class="sectionContainer contactSectionContainer" id="contactSection">
+                                        <div class="sectionHeader contactHeader">
                                             <h1>Let's <span>Work Together</span></h1>
                                             <p>Feel free to get in touch with me for any inquiries, collaborations, or project opportunities.</p>
                                         </div>
@@ -408,8 +404,8 @@
                                 <div class="page8">
 
                                         <!--FAQ Section Starts Here-->
-                                        <div class="sectionContainer">
-                                            <div class="sectionHeader">
+                                        <div class="sectionContainer faqSectionContainer">
+                                            <div class="sectionHeader faqsHeader">
                                                 <h1>Frequently <span>Asked Questions</span></h1>
                                                 <p>Find answers to common questions about our services, process, and more. Learn how we can help elevate your digital presence and address your unique needs.</p>
                                             </div>
@@ -433,7 +429,7 @@
 
                                 <!--Footer Section Starts Here-->
 
-                                <div class="coloredSectionContainer">
+                                <div class="coloredSectionContainer footerContainer">
                                     <div class="footerContent">
                                         <div class="footerLogoContainer">
                                             <img src="Assets/Logo/logo.svg" alt="Zealot Logo" class="footerLogo">
