@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 2000); // Delay to ensure image 1 pops out after image 2
 });
 
+gsap.registerPlugin(ScrollTrigger);
+
 gsap.to('.page1',{
     scrollTrigger: {
         trigger: '.page1',

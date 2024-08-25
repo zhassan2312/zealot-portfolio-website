@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     padding: 8px;
-    background-color: var(--black10);
+    background-color: var(--portfolioHeader);
     border-radius: 100px;
     box-sizing: border-box;
     max-width: 984px;
@@ -30,7 +30,7 @@
 {
     background-color: #F5450E;
     width: 100%;
-    color: var(--background);
+    color: white;
 }
 
 .portfolioContainer{

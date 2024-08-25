@@ -35,7 +35,8 @@ html,body
     --black2:#fafafa;
     --background:#fff;
     --anim:#feeae6;
-    
+    --portfolioHeader:#F3F3F4;
+    --testimonialContainer:#E7E9EA;
 }
 
 .dark-mode
@@ -51,7 +52,10 @@ html,body
     --black5:#4A5460;
     --black2:#283649;
     --background:#1D2939;
+    --portfolioHeader:#283649;
     --anim:#19496F;
+    --testimonialContainer:#1D2939;
+
 }
 
 #main
