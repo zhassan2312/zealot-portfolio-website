@@ -1,32 +1,32 @@
 let portfolioProjects = [
     {
-        image: 'Assets/Images/portfolio1.png',
-        name: 'Codexcue Landing Page',
+        image: 'https://mir-s3-cdn-cf.behance.net/projects/404/c8fd99183329297.Y3JvcCwyMjg4LDE3OTAsMCww.png',
+        name: 'TravelTrend',
         link: ''
     },
     {
-        image: 'Assets/Images/portfolio2.png',
-        name: 'Lincoln Recovery Landing Page'
+        image: 'https://miro.medium.com/v2/resize:fit:1400/0*wnwNT5rcIoZwNkgZ.jpg',
+        name: 'Fintech Service'
     },
     {
-        image: 'Assets/Images/portfolio3.png',
-        name: 'NERC Website Redesign'
+        image: 'https://assets.decktopus.com/webflow/templates/ux-case-study-template/1.webp',
+        name: 'Dechtopus'
     },
     {
-        image: 'Assets/Images/portfolio4.png',
-        name: 'Pharmacity App Design'
+        image: 'https://blog.uxfol.io/wp-content/uploads/2024/01/rebeca-ux-portfolio-example.png',
+        name: 'Moin Folio'
     },
     {
-        image: 'Assets/Images/portfolio5.png',
-        name: 'Digital Agecny'
+        image: 'https://mir-s3-cdn-cf.behance.net/projects/404/7586b1120916609.Y3JvcCwyNDkwLDE5NDgsMTU0LDA.png',
+        name: 'Whiskers'
     },
     {
-        image: 'Assets/Images/portfolio6.png',
-        name: 'Bookshire Website Redesign'
+        image: 'https://blog.tubikstudio.com/wp-content/uploads/2023/05/case-study-physica-magazine-tubik-design.jpg',
+        name: 'Physica'
     },
     {
-        image: 'Assets/Images/portfolio7.png',
-        name: 'Profit App Design'
+        image: 'https://theuxda.com/storage/app/media/thumb/4d7/428/aef/ENBD%20-%20UX%20Case%20Study%20HERO__width_1024.jpg',
+        name: 'Thexuda'
     }
 ];
 

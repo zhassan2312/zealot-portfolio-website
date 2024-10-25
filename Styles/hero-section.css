@@ -139,7 +139,7 @@
 }
 
 .heroSectionImage2 {
-    width: 321px;
+    width: auto;
     height: 430px;
     right: 16%;
     z-index: 2; /* Higher z-index to be at the front */
